@@ -32,9 +32,62 @@
 
 # If a negative input is provided, make sure your response contains the word 'negative'.  
 # For example, if the user inputs a negative number, print “Age cannot be a negative number.”
+import re
 
-dog_age = input("How old is you dog? ")
+age = input("How old is you dog? ")
 
-human_age = int(dog_age) * 2
+dog_age = float(age)
 
-print(f"The given dog age {dog_age} is {human_age} in human years.")
+if dog_age < 0:
+    print("The number can't be negative")
+
+human_age = dog_age * 2.0
+hhuman_age = "The given dog age {} is {} in human years.".format(age, human_age)
+
+print(f"The given dog age {age} is {human_age} in human years.")
+print(hhuman_age)
+
+hhhhuman_age = re.findall("\d+\.\d+ in human", hhuman_age)
+print("fff {}".format(hhhhuman_age))
+
+
+# DOG AGE TO HUMAN AGE calculator
+
+# import traceback
+
+# def calculator():
+    
+#     # Get dog age
+#     age = input("Input dog years: ")
+
+#     try:
+#         # Cast to float
+#         d_age = float(age)
+
+#         # If user enters negative number, print message
+#         # Otherwise, calculate dog's age in human years
+        
+#         # your code here
+        
+#         if d_age < 0:
+#             print("The number can't be negative")
+#         elif d_age == 1:
+#             human_age = 15.0
+#         elif d_age == 2:
+#             human_age = 24.0
+#         elif d_age == 3:
+#             human_age = 27.9
+#         elif d_age == 4:
+#             human_age = 32.0
+#         elif d_age == 5:
+#             human_age = d_age * 7.2
+#         else:
+#             human_age = (5 * 7.2) + (d_age - 5) * 7
+            
+#         print("The given dog age {} is {} in human years.".format(age, human_age))
+
+#     except:
+#         print(age, "is an invalid age.")
+#         print(traceback.format_exc())
+    
+# calculator()
