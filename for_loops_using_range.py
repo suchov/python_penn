@@ -25,5 +25,14 @@ for x in range(0, 30, 7):
 print("")
 
 # Iterate over sequence of 6 numbers, counting backwards from 5 - 0
+for x in range(5, -1, -1):
+    print(x)
+print("")
 
 # Find the numbers between 1 and 120 that are odd
+odd_numbers = []
+for x in range(1, 1201):
+    # if odd append to odd numbers list
+    if (x % 2 != 0):
+        odd_numbers.append(x)
+print(odd_numbers)
