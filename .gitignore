@@ -1,2 +1,10 @@
 .DS_Store
 .vscode/settings.json
+.idea/misc.xml
+.idea/Python3.iml
+.idea/inspectionProfiles/profiles_settings.xml
+/shelf/
+/workspace.xml
+.idea/vcs.xml
+.gitignore
+.idea/modules.xml
