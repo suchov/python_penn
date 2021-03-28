@@ -1,0 +1,3 @@
+# Implement all that stuff that is in module at the same time
+# It'll be easy by coppy and paste and I can play with it a bit here
+# don't forget about the main function...
